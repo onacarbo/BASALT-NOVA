@@ -1,0 +1,31 @@
+<svg width="70" height="67" viewBox="0 0 70 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="70" height="67" fill="#F5F5F5"/>
+<g id="hero">
+<g id="&#60;section&#62; hero sessions" clip-path="url(#clip0_0_1)">
+<rect width="1440" height="1190" transform="translate(-1341 -859)" fill="white"/>
+<g id="vinils">
+<g id="swiper">
+<g id="arrow">
+<g id="rectangle">
+<rect id="Rectangle 1" width="40" height="46" transform="matrix(-1 0 0 1 58 6)" fill="#EAF644"/>
+<rect id="Rectangle 2" width="40" height="46" transform="matrix(0 -1 -1 0 64 52)" fill="#EAF644"/>
+</g>
+<g id="rectangle_2">
+<rect id="Rectangle 1_2" width="40" height="46" transform="matrix(1 0 0 -1 12 61)" fill="#EAF644"/>
+<rect id="Rectangle 2_2" width="40" height="46" transform="matrix(0 1 1 0 6 15)" fill="#EAF644"/>
+</g>
+<g id="arrow_2">
+<path id="Polygon 2" d="M38 38L47 43.5L38 49" stroke="black" stroke-width="2"/>
+<path id="Vector 6" d="M29 20V43H45" stroke="black" stroke-width="2"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_0_1">
+<rect width="1440" height="1190" fill="white" transform="translate(-1341 -859)"/>
+</clipPath>
+</defs>
+</svg>
