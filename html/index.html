@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>BASÃLT × NØVA</title>
+
+    <!-- Tipografies -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Boldonse&family=Roboto+Mono:wght@400&family=Space+Mono:wght@400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Full d'estils -->
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+
+  <body>
+    <!-- MENÚ DE NAVEGACIÓ -->
+    <header class="header">
+      <a class="logo" href="#home">BxN</a>
+      <button
+        class="mobile-menu-button"
+        type="button"
+        aria-label="Obrir menú"
+        aria-expanded="false"
+      >
+        MENU
+      </button>
+
+      <div class="header-line"></div>
+
+      <nav class="menu" id="mobile-navigation">
+        <a href="#home" class="active">01 HOME</a>
+        <a href="#sessions">02 SESSIONS</a>
+        <a href="#about">03 ABOUT</a>
+        <a href="#contact">04 CONTACT</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HOME -->
+      <section class="home" id="home">
+        <!-- Fotografia -->
+        <div class="home-image">
+          <img src="../media/home.png/foto-about.png" alt="BASÃLT i NØVA" />
+        </div>
+
+        <!-- Títol -->
+        <div class="home-title">
+          <h1>BASÃLT</h1>
+          <h2>NØVA</h2>
+          <span class="cross">x</span>
+
+          <!-- Descripció i ona sonora -->
+          <div class="home-description">
+            <p class="slogan">TWO GENERATIONS, ONE SOUND.</p>
+
+            <div
+              class="soundwave"
+              id="soundwave"
+              role="img"
+              aria-label="Soundwave animation"
+            ></div>
+
+            <p class="subtitle">
+              FATHER & DAUGHTER<br />
+              AFRO HOUSE DUO
+            </p>
+          </div>
+        </div>
+
+        <!-- Part inferior de HOME -->
+        <div class="home-bottom">
+          <p>EST. 2026</p>
+          <div class="bottom-line"></div>
+          <p>MUSIC RUNS IN THE FAMILY</p>
+        </div>
+      </section>
+
+      <!-- SESSIONS -->
+      <section class="sessions" id="sessions">
+        <!-- Títol -->
+        <div class="sessions-title">
+          <h2>
+            <span class="summer-word">SUMMER</span>
+            <span class="archives-word">ARCHIVES</span>
+          </h2>
+        </div>
+
+        <!-- Subtítol -->
+        <div class="sessions-description">
+          <p>FOUR SESSIONS. FOUR MOMENTS. ONE SOUND SHARED.</p>
+          <p>VOL. 001 - 004</p>
+        </div>
+
+        <!-- Carrusel de vinils -->
+        <div class="sessions-carousel">
+          <div class="vinyl" data-index="0">
+            <img
+              src="../media/sessions/first-frequency.png"
+              alt="First Frequency"
+            />
+          </div>
+
+          <div class="vinyl" data-index="1">
+            <img src="../media/sessions/golden-hour.png" alt="Golden Hour" />
+          </div>
+
+          <div class="vinyl" data-index="2">
+            <img src="../media/sessions/after-dark.png" alt="After Dark" />
+          </div>
+
+          <div class="vinyl" data-index="3">
+            <img
+              src="../media/sessions/one-last-dance.png"
+              alt="One Last Dance"
+            />
+          </div>
+        </div>
+
+        <!-- Indicadors -->
+        <div class="sessions-indicators">
+          <span class="indicator active"></span>
+          <span class="indicator"></span>
+          <span class="indicator"></span>
+          <span class="indicator"></span>
+        </div>
+
+        <!-- Botó -->
+
+        <!-- Informació del vinil i botó -->
+        <div class="sessions-bottom">
+          <div div class="session-info">
+            <p class="session-number" id="session-number">001 / MACHETES</p>
+            <h3 class="session-name" id="session-name">FIRST FREQUENCY</h3>
+            <p class="session-caption" id="session-caption">
+              WHERE IT ALL BEGAN.
+            </p>
+          </div>
+
+          <a
+            class="listen-button"
+            href="#"
+            onclick="
+              alert('COMING SOON!');
+              return false;
+            "
+          >
+            <span class="play-icon">▶</span>
+            <span>LISTEN TO SET</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- ABOUT US -->
+
+      <section class="about" id="about">
+        <!-- SAME BLOOD, SAME BEAT -->
+        <div class="about-blood" id="about-blood">
+          <div class="about-photo-trail" id="about-photo-trail"></div>
+
+          <h2 class="about-blood-title">
+            <span class="about-title-line">
+              SAME <span class="yellow">BLOOD.</span>
+            </span>
+            <span class="about-title-line">
+              SAME <span class="yellow">BEAT.</span>
+            </span>
+          </h2>
+        </div>
+
+        <!-- intro -->
+        <p class="about-intro">TWO GENERATIONS. ONE SHARED PASSION.</p>
+
+        <!-- the story -->
+        <div class="about-story">
+          <div class="about-story-content">
+            <span class="about-story-label"> THE STORY / 001 </span>
+
+            <p class="about-story-description">
+              BASÃLT × NØVA IS A FATHER AND DAUGHTER DJ DUO BROUGHT TOGETHER BY
+              A SHARED LOVE FOR MUSIC. DIFFERENT GENERATIONS, DIFFERENT
+              INFLUENCES, ONE SOUND: AFRO HOUSE.
+            </p>
+
+            <div class="about-artists">
+              <button class="about-artist" type="button" data-artist="basalt">
+                <span>BASÃLT</span>
+                <span>FATHER /DJ</span>
+              </button>
+
+              <button class="about-artist" type="button" data-artist="nova">
+                <span>NØVA</span>
+                <span>DAUGHTER /DJ</span>
+              </button>
+            </div>
+
+            <span class="about-story-tag">
+              DIFFERENT GENERATIONS. SAME RYTHM
+            </span>
+          </div>
+
+          <!-- foto -->
+          <div class="about-story-photo">
+            <img src="../media/about/story.png" alt="BASÃLT i NØVA" />
+          </div>
+
+          <div class="about-story-wave" aria-hidden="true"></div>
+
+          <p class="about-story-date">SUMMER 2026 - MACHETES</p>
+        </div>
+      </section>
+
+      <!-- superposició -->
+      <div class="artist-overlay" id="artist-overlay" aria-hidden="true">
+        <div
+          class="artist-panel"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="artist-name"
+        >
+          <div class="artist-panel-inner">
+            <button
+              class="artist-close"
+              type="button"
+              aria-label="Tancar biografia"
+            >
+              ×
+            </button>
+
+            <div class="artist-panel-body">
+              <h3 class="artist-name" id="artist-name"></h3>
+
+              <p class="artist-description" id="artist-description"></p>
+
+              <div class="artist-panel-photo">
+                <img id="artist-image" src="" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONTACT US -->
+      <section class="contact-section" id="contact">
+        <!-- títol -->
+        <div class="contact-marquee">
+          <div class="contact-marquee-track">
+            <span>LET’S MAKE SOME NOISE</span>
+            <span aria-hidden="true">LET’S MAKE SOME NOISE</span>
+          </div>
+        </div>
+
+        <!-- descripció -->
+        <p class="contact-description">
+          BOOKINGS, COLLABORATIONS OR JUST A HELLO. WE’D LOVE TO HEAR FROM YOU.
+        </p>
+
+        <!-- contacte -->
+        <div class="contact-links">
+          <!-- gmail -->
+          <a
+            class="contact-pill contact-email"
+            href="mailto:basalt.nova@gmail.com"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M3 5h18v14H3zM3 6l9 7 9-7"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <span>BASALT.NOVA@GMAIL.COM</span>
+          </a>
+
+          <!-- insta -->
+          <a
+            class="contact-pill contact-instagram"
+            href="https://www.instagram.com/basalt.nova/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect
+                x="2.5"
+                y="2.5"
+                width="19"
+                height="19"
+                rx="5"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              />
+              <circle
+                cx="12"
+                cy="12"
+                r="4"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              />
+              <circle cx="17.7" cy="6.5" r="1.3" fill="currentColor" />
+            </svg>
+            <span>@BASALT.NOVA</span>
+          </a>
+
+          <!-- spotify -->
+          <a
+            class="contact-pill contact-spotify"
+            href="https://open.spotify.com/playlist/50kyJtemDXMVIOkFE343VM"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="11" fill="currentColor" />
+              <g fill="none" stroke="#fff" stroke-linecap="round">
+                <path d="M5 9c5-1.6 10-1.1 14 1" stroke-width="1.8" />
+                <path d="M6 12.5c4-1.2 8.5-.7 12 1" stroke-width="1.5" />
+                <path d="M7 16c3-.8 6.5-.3 9 1" stroke-width="1.3" />
+              </g>
+            </svg>
+            <span>@BASALT.NOVA</span>
+          </a>
+        </div>
+
+        <!-- línia -->
+        <div class="contact-footer-line"></div>
+
+        <!-- bottom -->
+        <footer class="contact-footer">
+          <p class="contact-copyright">
+            <span class="copyright-symbol">©</span>
+            2026 BASÃLT × NØVA. ALL RIGHTS RESERVED
+          </p>
+
+          <p class="contact-logo">BASÃLT x NØVA</p>
+
+          <a href="#home" class="contact-back">
+            <span>BACK TO TOP</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M5 19 19 5M8 5h11v11"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+        </footer>
+      </section>
+    </main>
+
+    <!-- connexió amb JavaScript -->
+    <script src="../js/script.js"></script>
+  </body>
+</html>

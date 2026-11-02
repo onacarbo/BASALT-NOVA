@@ -1,0 +1,2383 @@
+/* ESTILS GENERALS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f1ede8;
+  font-family: "Roboto Mono", monospace;
+  overflow-x: hidden;
+}
+
+/* menú */
+
+.header {
+  position: absolute;
+  top: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: calc(100% - 90px);
+  max-width: 1349px;
+  height: 25px;
+
+  z-index: 20;
+}
+
+.logo {
+  position: absolute;
+  top: 1px;
+  left: 0;
+
+  font-family: "Roboto Mono", monospace;
+  font-size: 14px;
+  color: black;
+  text-decoration: none;
+}
+
+.header-line {
+  position: absolute;
+  top: 9px;
+  left: 39px;
+  width: calc(100% - 615px);
+  height: 1px;
+  background-color: #999c94;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 563px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu a {
+  font-family: "Roboto Mono", monospace;
+  font-size: 14px;
+  color: black;
+  text-decoration: none;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #999c94;
+}
+
+.menu a.active,
+.menu a:hover {
+  border-bottom-color: #454b39;
+}
+
+/* HOME */
+
+.home {
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  height: 850px;
+  margin: 0 auto;
+  background-color: #f1ede8;
+  overflow: hidden;
+}
+
+/* foto */
+
+.home-image {
+  position: absolute;
+  top: 64px;
+  left: 26px;
+  width: calc(100% - 52px);
+  height: 717px;
+  overflow: hidden;
+}
+
+.home-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* títol BASÃLT × NØVA */
+
+.home-title {
+  position: absolute;
+  top: 164px;
+  left: 45px;
+  width: 539px;
+  height: 400px;
+  z-index: 2;
+}
+
+.home-title h1,
+.home-title h2 {
+  position: absolute;
+  left: 0;
+
+  font-family: "Boldonse", sans-serif;
+  font-size: 128px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  line-height: 1.836;
+
+  color: #eaf744;
+  white-space: nowrap;
+
+  text-shadow: -10px 10px 4px rgba(197, 175, 163, 0.25);
+}
+
+.home-title h1 {
+  top: 0;
+}
+
+.home-title h2 {
+  top: 165px;
+}
+
+.cross {
+  position: absolute;
+  top: 194px;
+  left: 465px;
+
+  font-family: "Archivo Black", sans-serif;
+  font-size: 110px;
+  line-height: 1;
+  color: #eaf744;
+
+  text-shadow: -10px 10px 4px rgba(197, 175, 163, 0.25);
+}
+
+/* descripcio home */
+
+.home-description {
+  position: absolute;
+  top: 400px;
+  left: -8px;
+  width: 461px;
+  height: 188px;
+}
+
+.slogan {
+  position: absolute;
+  top: 0;
+  left: 14px;
+
+  font-family: "Space Mono", monospace;
+  font-size: 27px;
+  color: white;
+  white-space: nowrap;
+}
+
+.subtitle {
+  position: absolute;
+  top: 135px;
+  left: 14px;
+
+  font-family: "Space Mono", monospace;
+  font-size: 16px;
+  color: white;
+  z-index: 2;
+}
+
+/* ONA SONORA */
+
+.soundwave {
+  position: absolute;
+  top: 55px;
+  left: 14px;
+
+  width: 447px;
+  height: 65px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1px;
+  overflow: hidden;
+}
+
+.bar {
+  width: 3px;
+  flex-shrink: 0;
+  border-radius: 2px;
+  background-color: #eaf744;
+  zoom: 0.42;
+
+  animation: wave 1.2s ease-in-out infinite alternate;
+  transform-origin: center;
+}
+
+@keyframes wave {
+  from {
+    transform: scaleY(0.45);
+  }
+
+  to {
+    transform: scaleY(1);
+  }
+}
+
+/* bottom home */
+
+.home-bottom {
+  position: absolute;
+  top: 817px;
+  left: 45px;
+
+  width: calc(100% - 90px);
+  height: 18px;
+
+  display: flex;
+  align-items: center;
+}
+
+.home-bottom p {
+  font-family: "Roboto Mono", monospace;
+  font-size: 14px;
+  color: black;
+  white-space: nowrap;
+}
+
+.bottom-line {
+  flex: 1;
+  height: 1px;
+  background-color: #999c94;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+/* SESSIONS */
+
+.sessions {
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  height: 1070px;
+  margin: 0 auto;
+
+  background-color: #f1ede8;
+  overflow: hidden;
+
+  --session-color: #9c0a1e;
+}
+
+/* títol */
+
+.sessions-title {
+  position: absolute;
+  top: 55px;
+  left: 31px;
+  width: 1093px;
+  height: 176px;
+  z-index: 2;
+}
+
+.sessions-title h2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+
+  font-family: "Boldonse", sans-serif;
+  font-size: 96px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  line-height: 1.836;
+  white-space: nowrap;
+
+  text-shadow: -10px 10px 4px rgba(197, 175, 163, 0.25);
+}
+
+.summer-word {
+  color: black;
+}
+
+.archives-word {
+  color: var(--session-color);
+}
+
+/* subtitol sessions */
+
+.sessions-description {
+  position: absolute;
+  top: 217px;
+  left: 47px;
+
+  width: calc(100% - 97px);
+  height: 40px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-family: "Space Mono", monospace;
+  font-size: 27px;
+  color: black;
+  white-space: nowrap;
+  z-index: 2;
+}
+
+/* carrusel vinils */
+
+.sessions-carousel {
+  position: absolute;
+  top: 348px;
+  left: 0;
+
+  width: 100%;
+  height: 540px;
+  overflow: hidden;
+}
+
+.vinyl {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 1100px;
+  height: 825px;
+
+  opacity: 1;
+  visibility: visible;
+
+  transform: translate(-50%, -50%);
+  transition: transform 0.75s cubic-bezier(0.25, 0.8, 0.25, 1);
+  will-change: transform;
+}
+
+.vinyl img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* indicadors */
+
+.sessions-indicators {
+  position: absolute;
+  top: 880px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  gap: 10px;
+}
+
+.indicator {
+  width: 49px;
+  height: 8px;
+  border-radius: 20px;
+  background-color: #b5b7b1;
+}
+
+.indicator.active {
+  background-color: #eaf744;
+}
+
+/* part inferior sessions */
+
+.sessions-bottom {
+  position: absolute;
+  top: 930px;
+  left: 35px;
+
+  width: calc(100% - 70px);
+  height: 100px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/*  botó listen to set */
+
+.listen-button {
+  width: 344px;
+  height: 66px;
+
+  background-color: #eaf744;
+  border-radius: 73px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+
+  font-family: "Space Mono", monospace;
+  font-size: 27px;
+  color: black;
+  text-decoration: none;
+  white-space: nowrap;
+
+  transition: background-color 0.3s ease;
+}
+
+.listen-button:hover {
+  background-color: #d4df30;
+}
+
+.play-icon {
+  font-size: 35px;
+  line-height: 1;
+}
+
+/* ADAPTACIÓ BÀSICA A PANTALLES MÉS PETITES */
+
+@media (max-width: 900px) {
+  .header {
+    width: calc(100% - 40px);
+  }
+
+  .header-line {
+    display: none;
+  }
+
+  .menu {
+    width: auto;
+    gap: 15px;
+  }
+
+  .menu a {
+    font-size: 11px;
+  }
+
+  .home-title {
+    transform: scale(0.65);
+    transform-origin: top left;
+  }
+
+  .sessions-title {
+    transform: scale(0.65);
+    transform-origin: top left;
+  }
+
+  .sessions-description {
+    font-size: 14px;
+  }
+
+  .vinyl {
+    width: 850px;
+    height: 638px;
+  }
+
+  .listen-button {
+    width: 260px;
+    height: 55px;
+    font-size: 18px;
+  }
+}
+
+/* ABOUT US */
+
+.about {
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  height: 1626px;
+  margin: 0 auto;
+  background: #f1ede8;
+}
+
+/* SAME BLOOD, SAME BEAT */
+
+.about-blood {
+  position: absolute;
+  top: 102px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  height: 680px;
+  overflow: hidden;
+  border: none;
+  background: #f1ede8;
+  isolation: isolate;
+  cursor: crosshair;
+}
+
+.about-blood-title {
+  position: absolute;
+  top: 164px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 843px;
+  height: 352px;
+  margin: 0;
+
+  font-family: "Boldonse", sans-serif;
+  font-size: 96px;
+  font-weight: 400;
+  letter-spacing: 3.84px;
+  line-height: 1.836;
+  text-align: center;
+  white-space: nowrap;
+
+  color: black;
+  text-shadow: -10px 10px 4px rgba(197, 175, 163, 0.25);
+
+  z-index: 5;
+  pointer-events: none;
+}
+
+.about-title-line {
+  display: block;
+  height: 176px;
+}
+
+.about-title-line .yellow {
+  color: #eaf644;
+}
+
+/* foto */
+
+.about-photo-trail {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.about-trail-image {
+  position: absolute;
+
+  width: 180px;
+  height: 220px;
+
+  object-fit: cover;
+  filter: grayscale(100%);
+
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+
+  opacity: 0;
+  animation: about-fade 2.3s ease-out forwards;
+}
+
+@keyframes about-fade {
+  0% {
+    opacity: 0;
+  }
+  12% {
+    opacity: 1;
+  }
+  65% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* intro */
+
+.about-intro {
+  position: absolute;
+  top: 849px;
+  left: 50px;
+
+  margin: 0;
+
+  font-family: "Space Mono", monospace;
+  font-size: 27px;
+  color: black;
+  white-space: nowrap;
+}
+
+/* THE STORY */
+
+.about-story {
+  position: absolute;
+  top: 923px;
+  left: 0;
+
+  width: 100%;
+  height: 664px;
+}
+
+.about-story-content {
+  position: absolute;
+  top: 0;
+  left: 74px;
+
+  width: 390px;
+  height: 527px;
+}
+
+.about-story-label,
+.about-story-tag {
+  display: inline-block;
+  padding: 5px 8px;
+
+  background: #eaf644;
+
+  font-family: "Space Mono", monospace;
+  font-size: 16px;
+  color: black;
+  white-space: nowrap;
+}
+
+.about-story-description {
+  position: absolute;
+  top: 66px;
+  left: 0;
+
+  width: 336px;
+  margin: 0;
+
+  font-family: "Space Mono", monospace;
+  font-size: 16px;
+  line-height: normal;
+  color: black;
+}
+
+/* FATHER / DAUGHTER */
+
+.about-artists {
+  position: absolute;
+  top: 226px;
+  left: 0;
+
+  width: 390px;
+  height: 222px;
+
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.about-artists::after {
+  content: "";
+  position: absolute;
+  top: 110px;
+  left: 0;
+  width: 380px;
+  height: 1px;
+  background: black;
+}
+
+.about-artist {
+  position: absolute;
+  left: 0;
+
+  width: 390px;
+  height: 37px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 5px;
+
+  background: white;
+  border: none;
+
+  font-family: "Space Mono", monospace;
+  font-size: 16px;
+  color: black;
+
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  z-index: 1;
+}
+
+.about-artist:first-child {
+  top: 38px;
+}
+
+.about-artist:last-child {
+  top: 148px;
+}
+
+/* requadre groc */
+
+.about-artist:hover,
+.about-artist:focus-visible {
+  background: #eaf644;
+  outline: 3px solid #eaf644;
+}
+
+/* eti */
+
+.about-story-tag {
+  position: absolute;
+  top: 495px;
+  left: 40px;
+}
+
+/* foto */
+
+.about-story-photo {
+  position: absolute;
+  top: 0;
+  left: 518px;
+
+  width: 863px;
+  height: 576px;
+
+  overflow: hidden;
+  transform-origin: center;
+
+  transition: transform 0.45s ease;
+}
+
+.about-story-photo:hover {
+  transform: rotate(3deg);
+}
+
+.about-story-photo img {
+  position: absolute;
+  display: block;
+
+  width: 126.16%;
+  height: 336.04%;
+
+  left: -12.99%;
+  top: -100.75%;
+
+  max-width: none;
+  object-fit: fill;
+}
+
+/* bottom */
+
+.about-story-wave {
+  position: absolute;
+  top: 537px;
+  left: 74px;
+
+  width: 380px;
+  height: 127px;
+
+  background-image: url("../media/about/sound-waves.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.about-story-date {
+  position: absolute;
+  top: 586px;
+  left: 1196px;
+
+  margin: 0;
+
+  font-family: "Roboto Mono", monospace;
+  font-size: 14px;
+  color: black;
+  white-space: nowrap;
+}
+
+/* superposició ve de baix */
+
+.artist-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition:
+    opacity 0.4s ease,
+    visibility 0.4s ease;
+}
+
+.artist-overlay.open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.artist-panel {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 440px;
+
+  transform: translateY(100%);
+  transition: transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.artist-overlay.open .artist-panel {
+  transform: translateY(0);
+}
+
+.artist-panel-inner {
+  position: relative;
+  width: 100%;
+  max-width: none;
+  height: 440px;
+  margin: 0 auto;
+}
+
+/* fons */
+
+.artist-panel-body {
+  position: absolute;
+  top: 65px;
+  left: 0;
+
+  width: 100%;
+  height: 375px;
+
+  background: #f1ede8;
+  overflow: hidden;
+}
+
+/* creu */
+
+.artist-close {
+  position: absolute;
+  top: 0;
+  right: 83px;
+  width: 90px;
+  height: 90px;
+  z-index: 5;
+  border: none;
+  background: #f1ede8;
+  font-size: 0px;
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  cursor: pointer;
+}
+
+.artist-close,
+.artist-close:hover {
+  background: #f1ede8;
+}
+
+.artist-close::after {
+  content: "×";
+  position: absolute;
+  top: 27px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: Arial, sans-serif;
+  font-size: 40px;
+  font-weight: 200;
+  line-height: 1;
+  color: black;
+}
+
+.artist-close:hover {
+  background: #f1ede8;
+}
+
+.artist-close:hover::after {
+  color: #a50018;
+}
+
+/* nom */
+
+.artist-name {
+  position: absolute;
+  top: 40px;
+  left: 41px;
+
+  margin: 0;
+  padding: 5px 8px;
+
+  background: #eaf644;
+
+  font-family: "Space Mono", monospace;
+  font-size: 24px;
+  font-weight: 400;
+  color: black;
+}
+
+/* bio */
+
+.artist-description {
+  position: absolute;
+  top: 120px;
+  left: 41px;
+
+  width: 1014px;
+  max-width: calc(100% - 425px);
+
+  margin: 0;
+
+  font-family: "Space Mono", monospace;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+  color: black;
+}
+
+/* foto */
+
+.artist-panel-photo {
+  position: absolute;
+  top: 41px;
+  right: 79px;
+  width: 257px;
+  height: 283px;
+  overflow: hidden;
+  transition: transform 0.45s ease;
+}
+
+.artist-panel-photo:hover {
+  transform: rotate(3deg);
+}
+
+.artist-panel-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* BASÃLT */
+.artist-panel-photo.basalt img {
+  display: block;
+  position: absolute;
+  width: 165.18%;
+  height: auto;
+  max-width: none;
+  top: 0;
+  left: -59.47%;
+  object-fit: initial;
+  transform: none;
+}
+
+/* NØVA */
+.artist-panel-photo.nova img {
+  display: block;
+  position: absolute;
+  width: 137.46%;
+  height: auto;
+  max-width: none;
+  top: -46.64%;
+  left: -37.49%;
+  object-fit: initial;
+  transform: none;
+}
+
+/* RESPONSIVE*/
+
+@media (max-width: 900px) {
+  .about {
+    height: auto;
+    padding-top: 90px;
+    padding-bottom: 70px;
+  }
+
+  .about-blood {
+    position: relative;
+    top: auto;
+    height: 440px;
+  }
+
+  .about-blood-title {
+    width: 100%;
+    height: auto;
+    top: 125px;
+    font-size: clamp(28px, 6vw, 60px);
+    letter-spacing: 1px;
+    line-height: 1.5;
+  }
+
+  .about-title-line {
+    height: auto;
+  }
+
+  .about-trail-image {
+    width: 130px;
+    height: 160px;
+  }
+
+  .about-intro {
+    position: relative;
+    top: auto;
+    left: auto;
+
+    margin: 45px 20px 30px;
+    font-size: clamp(14px, 2.5vw, 22px);
+    white-space: normal;
+  }
+
+  .about-story {
+    position: relative;
+    top: auto;
+    height: auto;
+    padding: 0 20px;
+  }
+
+  .about-story-content {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    height: 527px;
+  }
+
+  .about-artists,
+  .about-artist {
+    width: min(390px, 100%);
+  }
+
+  .about-story-photo {
+    position: relative;
+    top: auto;
+    left: auto;
+
+    width: 100%;
+    height: auto;
+    aspect-ratio: 863 / 576;
+  }
+
+  .about-story-wave {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: min(380px, 100%);
+    margin-top: 20px;
+  }
+
+  .about-story-date {
+    position: relative;
+    top: auto;
+    left: auto;
+    text-align: right;
+    margin-top: 12px;
+  }
+
+  .artist-panel {
+    height: min(85vh, 600px);
+  }
+
+  .artist-panel-inner {
+    height: 100%;
+  }
+
+  .artist-panel-body {
+    height: calc(100% - 65px);
+    overflow-y: auto;
+    padding: 35px 20px;
+  }
+
+  .artist-close {
+    right: 15px;
+    width: 65px;
+    height: 65px;
+  }
+
+  .artist-name,
+  .artist-description,
+  .artist-panel-photo {
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+  }
+
+  .artist-name {
+    display: inline-block;
+    font-size: 20px;
+  }
+
+  .artist-description {
+    max-width: none;
+    width: 100%;
+    margin-top: 25px;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .artist-panel-photo {
+    margin-top: 25px;
+    width: 200px;
+    height: 220px;
+  }
+}
+
+/* CONTACT US */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.contact-section {
+  position: relative;
+  width: 100vw;
+  max-width: none;
+  height: 960px;
+  margin-left: calc(50% - 50vw);
+  background: #eaf644;
+  color: #000;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* títol */
+
+.contact-marquee {
+  position: absolute;
+  top: 304px;
+  left: 0;
+  width: 100%;
+  height: 176px;
+  overflow: hidden;
+}
+
+.contact-marquee-track {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  gap: 90px;
+  animation: contact-scroll 22s linear infinite;
+}
+
+.contact-marquee-track span {
+  display: block;
+  flex-shrink: 0;
+  font-family: "Boldonse", sans-serif;
+  font-size: 96px;
+  font-weight: 400;
+  letter-spacing: 3.84px;
+  line-height: 1.836;
+  white-space: nowrap;
+  text-shadow: -10px 10px 4px rgba(197, 175, 163, 0.25);
+}
+
+@keyframes contact-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-50% - 45px));
+  }
+}
+
+/* descripció */
+
+.contact-description {
+  position: absolute;
+  top: 504px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 767px;
+  margin: 0;
+
+  font-family: "Space Mono", monospace;
+  font-size: 27px;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  color: #000;
+}
+
+/* contact */
+
+.contact-links {
+  position: absolute;
+  top: 608px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  align-items: center;
+  gap: 57px;
+  width: 699px;
+}
+
+.contact-pill {
+  box-sizing: border-box;
+  flex-shrink: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  background: #fff;
+  border-radius: 43px;
+  color: #000;
+  text-decoration: none;
+  white-space: nowrap;
+
+  font-family: "Space Mono", monospace;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease;
+}
+
+.contact-pill svg {
+  position: absolute;
+  width: 17px;
+  height: 17px;
+}
+
+.contact-pill span {
+  position: absolute;
+  white-space: nowrap;
+}
+
+/* gmail */
+
+.contact-email {
+  width: 256px;
+  height: 35px;
+}
+
+.contact-email svg {
+  left: 13px;
+  top: 9px;
+}
+
+.contact-email span {
+  left: 39px;
+}
+
+/* insta */
+
+.contact-instagram {
+  width: 164px;
+  height: 34px;
+}
+
+.contact-instagram svg {
+  left: 10px;
+  top: 8px;
+}
+
+.contact-instagram span {
+  left: 36px;
+}
+
+/* spotify */
+
+.contact-spotify {
+  width: 165px;
+  height: 32px;
+}
+
+.contact-spotify svg {
+  left: 13px;
+  top: 7px;
+}
+
+.contact-spotify span {
+  left: 37px;
+}
+
+.contact-pill:hover {
+  background: #454a39;
+  color: #eaf644;
+}
+
+.contact-spotify:hover svg g {
+  stroke: #000;
+}
+
+/* línia */
+
+.contact-footer-line {
+  position: absolute;
+  top: 795px;
+  left: max(25px, calc((100% - 1390px) / 2));
+  right: max(25px, calc((100% - 1390px) / 2));
+  height: 1px;
+  background: #000;
+}
+
+/* bottom */
+
+.contact-footer {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 100%;
+  max-width: 1440px;
+  height: 165px;
+}
+
+/* copyrigth */
+
+.contact-copyright {
+  position: absolute;
+  top: 58px;
+  left: 38px;
+  margin: 0;
+
+  display: flex;
+  align-items: center;
+  gap: 3px;
+
+  font-family: "Space Mono", monospace;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000;
+  white-space: nowrap;
+}
+
+.copyright-symbol {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  margin-right: 2px;
+}
+
+/* logo */
+
+.contact-logo {
+  position: absolute;
+  top: 28px;
+  left: 643px;
+  transform: none;
+  margin: 0;
+
+  font-family: "Boldonse", sans-serif;
+  font-size: 45px;
+  font-weight: 400;
+  letter-spacing: 1.8px;
+  line-height: 1.836;
+  white-space: nowrap;
+  color: #000;
+
+  text-shadow: -10px 10px 4px rgba(197, 175, 163, 0.25);
+}
+
+/* back to top */
+
+.contact-back {
+  position: absolute;
+  top: 52px;
+  right: 47px;
+
+  width: 166px;
+  height: 35px;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-left: 18px;
+
+  border-radius: 46px;
+  background: #eaf644;
+  color: #000;
+  text-decoration: none;
+
+  font-family: "Space Mono", monospace;
+  font-size: 16px;
+  white-space: nowrap;
+
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease;
+}
+
+.contact-back svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.contact-back:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .contact-section {
+    height: 760px;
+  }
+
+  .contact-marquee {
+    top: 185px;
+    height: 130px;
+  }
+
+  .contact-marquee-track span {
+    font-size: clamp(38px, 7vw, 70px);
+  }
+
+  .contact-description {
+    top: 365px;
+    width: calc(100% - 40px);
+    font-size: clamp(16px, 3vw, 22px);
+  }
+
+  .contact-links {
+    top: 475px;
+    width: calc(100% - 30px);
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .contact-footer-line {
+    top: 625px;
+    left: 20px;
+    right: 20px;
+  }
+
+  .contact-footer {
+    height: 135px;
+  }
+
+  .contact-logo {
+    top: 10px;
+    font-size: clamp(20px, 4vw, 32px);
+  }
+
+  .contact-copyright {
+    top: 84px;
+    left: 20px;
+    font-size: 10px;
+  }
+
+  .contact-back {
+    top: 76px;
+    right: 20px;
+    width: 130px;
+    padding-left: 8px;
+    gap: 6px;
+    font-size: 12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .contact-marquee-track {
+    animation: none;
+  }
+}
+
+/* HOME MÒBIL */
+
+@media screen and (max-width: 600px) {
+  .home {
+    position: relative;
+    width: 100%;
+    height: 852px;
+    min-height: 852px;
+    overflow: hidden;
+  }
+
+  .header {
+    position: absolute;
+    top: 51px;
+    left: 14px;
+    right: 14px;
+    width: auto;
+    height: 24px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+  }
+
+  .header .logo {
+    position: static;
+    font-size: 16px;
+  }
+
+  .header .header-line {
+    position: static;
+    flex: 1;
+    height: 1px;
+    margin: 0 10px;
+  }
+
+  .header .menu {
+    display: none;
+  }
+
+  .header .menu.mobile-open {
+    display: flex;
+    position: absolute;
+    top: 35px;
+    right: 0;
+    flex-direction: column;
+    width: 190px;
+    padding: 20px;
+    background: #eaf644;
+  }
+
+  .mobile-menu-button {
+    display: block;
+    position: static;
+    width: 48px;
+    height: 24px;
+    border: none;
+    border-radius: 3px;
+    background: #eaf644;
+    color: #000;
+    font-family: "Roboto Mono", monospace;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .home-title {
+    position: absolute;
+    top: 84px;
+    left: 14px;
+    width: 365px;
+    height: 201px;
+    margin: 0;
+    transform: none;
+  }
+
+  .home-title h1,
+  .home-title h2 {
+    position: absolute;
+    width: auto;
+    height: auto;
+    margin: 0;
+    font-family: "Boldonse", sans-serif;
+    font-size: 64px;
+    font-weight: 400;
+    letter-spacing: 2.56px;
+    color: #eaf644;
+    white-space: nowrap;
+    transform: none;
+  }
+
+  .home-title h1 {
+    top: 0;
+    left: 0;
+    line-height: 1;
+  }
+
+  .home-title h2 {
+    top: 83px;
+    left: 4px;
+    line-height: 1;
+  }
+
+  .home-title .cross {
+    position: absolute;
+    top: 95px;
+    left: 241px;
+    font-size: 64px;
+    color: #eaf644;
+    transform: none;
+  }
+
+  .home-image {
+    position: absolute;
+    top: 290px;
+    left: 10px;
+    width: calc(100% - 32px);
+    height: 402px;
+    margin: 0;
+    transform: none;
+    overflow: hidden;
+  }
+
+  .home-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transform: none;
+  }
+
+  .home-title .home-description {
+    position: absolute;
+    top: 206px;
+    left: -4px;
+    width: calc(100vw - 32px);
+    height: 402px;
+    margin: 0;
+    transform: none;
+    z-index: 5;
+    pointer-events: none;
+  }
+
+  .home-title .home-description .slogan {
+    position: absolute;
+    top: 10px;
+    left: 8px;
+    right: auto;
+    bottom: auto;
+    width: 196px;
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.5;
+    white-space: normal;
+    color: white;
+    transform: none;
+  }
+
+  .home-title .home-description .subtitle {
+    position: absolute;
+    top: 346px;
+    bottom: auto;
+    left: auto;
+    right: 30px;
+
+    width: auto;
+    margin: 0;
+
+    font-family: "Roboto Mono", monospace;
+    font-size: 14px;
+    line-height: 1.5;
+    color: white;
+    text-align: right;
+    white-space: nowrap;
+    transform: none;
+  }
+
+  .home-title .home-description .soundwave {
+    display: flex;
+    position: absolute;
+    top: 471px;
+    left: 13px;
+    width: 336px;
+    height: 112px;
+    margin: 0;
+    transform: none;
+    overflow: hidden;
+  }
+
+  .home-bottom {
+    position: absolute;
+    top: 721px;
+    left: 10px;
+    width: calc(100% - 32px);
+    height: 18px;
+    margin: 0;
+    transform: none;
+  }
+}
+
+/* HEADER MÒBIL */
+
+@media screen and (max-width: 600px) {
+  .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: auto;
+    transform: none;
+    width: 100%;
+    max-width: none;
+    height: 70px;
+    padding: 0 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+  }
+
+  .header .logo {
+    display: block;
+    position: static;
+    font-size: 16px;
+    color: black;
+    z-index: 1002;
+  }
+
+  .header .header-line {
+    display: none;
+  }
+
+  .header .mobile-menu-button {
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    left: auto;
+    transform: none;
+    width: auto;
+    height: auto;
+    padding: 8px 12px;
+    background: #eaf644;
+    border: none;
+    border-radius: 4px;
+    color: black;
+    font-family: "Roboto Mono", monospace;
+    font-size: 16px;
+    z-index: 1003;
+    cursor: pointer;
+  }
+
+  .header .menu {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    left: auto;
+    width: 50vw;
+    height: 100dvh;
+    margin: 0;
+    padding: 90px 15px 25px;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 18px;
+    background: #eaf644;
+    z-index: 1001;
+
+    transform: translateX(100%);
+    visibility: hidden;
+    transition:
+      transform 0.4s ease,
+      visibility 0s linear 0.4s;
+  }
+
+  .header .menu.mobile-open {
+    transform: translateX(0);
+    visibility: visible;
+    transition:
+      transform 0.4s ease,
+      visibility 0s;
+  }
+
+  .header .menu a {
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+    font-size: 13px;
+    white-space: nowrap;
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+  }
+}
+
+/* INFORMACIÓ DELS VINILS — MÒBIL */
+
+@media screen and (max-width: 600px) {
+  .sessions-bottom {
+    position: absolute;
+    top: 646px;
+    bottom: auto;
+    left: 22px;
+    right: auto;
+    width: calc(100% - 44px);
+    height: 183px;
+    margin: 0;
+    transform: none;
+  }
+
+  .session-info {
+    position: absolute;
+    top: 6px;
+    left: 5px;
+    width: 100%;
+    color: #000;
+  }
+
+  .session-number,
+  .session-caption {
+    margin: 0;
+    font-family: "Space Mono", monospace;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .session-name {
+    margin: 5px 0 0;
+    font-family: "Boldonse", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+    line-height: 1.4;
+    text-shadow: -10px 10px 4px rgba(197, 175, 163, 0.25);
+  }
+
+  .session-caption {
+    margin-top: 0;
+  }
+
+  .sessions-bottom .listen-button {
+    position: absolute;
+    top: 128px;
+    left: 50%;
+    bottom: auto;
+    right: auto;
+    width: 248px;
+    height: 50px;
+    transform: translateX(-50%);
+    box-sizing: border-box;
+  }
+
+  .sessions-indicators {
+    position: absolute;
+    top: 579px;
+    bottom: auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* SESSIONS MÒBIL */
+
+@media screen and (max-width: 600px) {
+  .sessions {
+    position: relative;
+    width: 100%;
+    height: 937px;
+    overflow: hidden;
+  }
+
+  /* summer archives */
+  .sessions-title {
+    position: absolute;
+    top: 96px;
+    left: 14px;
+    width: calc(100% - 28px);
+    height: 160px;
+    transform: none;
+    z-index: 3;
+  }
+
+  .sessions-title h2 {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: "Boldonse", sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 1.33;
+    letter-spacing: 2.4px;
+    white-space: nowrap;
+  }
+
+  .summer-word,
+  .archives-word {
+    display: block;
+  }
+
+  .summer-word {
+    color: black;
+  }
+
+  .archives-word {
+    color: var(--session-color);
+  }
+
+  /* subtítol */
+  .sessions-description {
+    position: absolute;
+    top: 276px;
+    left: 14px;
+    right: 14px;
+    width: auto;
+    height: 54px;
+    margin: 0;
+    display: block;
+    transform: none;
+    font-family: "Space Mono", monospace;
+    font-size: 12px;
+    white-space: normal;
+    z-index: 3;
+  }
+
+  .sessions-description p:first-child {
+    width: 214px;
+    font-size: 12px;
+    line-height: 18px;
+    white-space: normal;
+  }
+
+  .sessions-description p:last-child {
+    position: absolute;
+    top: 36px;
+    right: 10px;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
+  /* vinils */
+  .sessions-carousel {
+    position: absolute;
+    top: 280px;
+    left: 0;
+    width: 100%;
+    height: 340px;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  .vinyl {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 450px;
+    height: 337px;
+  }
+
+  .vinyl img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  /* indicadors */
+  .sessions-indicators {
+    top: 579px;
+    gap: 12px;
+    z-index: 3;
+  }
+
+  .indicator {
+    width: 19px;
+    height: 4px;
+  }
+
+  /* info i botó */
+  .sessions-bottom {
+    z-index: 3;
+  }
+
+  .sessions-bottom .listen-button {
+    font-size: 20px;
+    gap: 14px;
+  }
+
+  .sessions-bottom .play-icon {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about-blood {
+    touch-action: pan-y;
+  }
+}
+
+/* ABOUT US — THE STORY MÒBIL */
+
+@media screen and (max-width: 600px) {
+  .about {
+    position: relative;
+    width: 100%;
+    height: 1862px;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .about-intro {
+    position: absolute;
+    top: 826px;
+    left: 23px;
+    width: 310px;
+    margin: 0;
+    font-family: "Space Mono", monospace;
+    font-size: 24px;
+    line-height: 1.5;
+    white-space: normal;
+  }
+
+  .about-story {
+    position: absolute;
+    top: 923px;
+    left: 0;
+    width: 100%;
+    height: 880px;
+    padding: 0;
+  }
+
+  .about-story-content {
+    position: absolute;
+    top: 0;
+    left: 31px;
+    width: calc(100% - 62px);
+    height: auto;
+    margin: 0;
+  }
+
+  .about-story-label {
+    position: relative;
+    top: 0;
+    left: -8px;
+    padding: 5px 8px;
+    font-size: 16px;
+  }
+
+  .about-story-description {
+    position: relative;
+    top: auto;
+    left: 0;
+    width: 100%;
+    margin-top: 25px;
+    font-family: "Space Mono", monospace;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  /* foto */
+  .about-story-photo {
+    position: absolute;
+    top: 197px;
+    left: 31px;
+    width: calc(100% - 62px);
+    height: 350px;
+    aspect-ratio: auto;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  .about-story-photo img {
+    position: static;
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .about-story-photo:hover {
+    transform: none;
+  }
+
+  /* data */
+  .about-story-date {
+    position: absolute;
+    top: 562px;
+    left: 31px;
+    width: calc(100% - 62px);
+    margin: 0;
+    font-size: 14px;
+    text-align: right;
+  }
+
+  /* BASÃLT I NØVA */
+  .about-artists {
+    position: absolute;
+    top: 610px;
+    left: 0;
+    width: 100%;
+    height: 202px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+
+  .about-artists::after {
+    top: 101px;
+    width: 100%;
+  }
+
+  .about-artist {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 31px;
+    padding: 0 4px;
+    font-size: 16px;
+    background: white;
+  }
+
+  .about-artist:first-child {
+    top: 35px;
+  }
+
+  .about-artist:last-child {
+    top: 136px;
+  }
+
+  .about-story-wave {
+    display: none;
+  }
+
+  .about-story-tag {
+    position: absolute;
+    top: 842px;
+    left: 27px;
+    padding: 5px 8px;
+    font-size: 16px;
+    white-space: nowrap;
+  }
+}
+
+/* BIOGRAFIES — MÒBIL */
+
+@media screen and (max-width: 600px) {
+  .artist-panel {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: min(852px, 94dvh);
+  }
+
+  .artist-panel-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .artist-panel-body {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 50px);
+    padding: 50px 21px 35px;
+    box-sizing: border-box;
+    background: #f1ede8;
+    overflow-y: auto;
+  }
+
+  /* nom */
+  .artist-name {
+    position: relative;
+    display: table;
+    top: auto;
+    left: auto;
+    margin: 0;
+    padding: 5px 8px;
+    background: #eaf644;
+    font-family: "Space Mono", monospace;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  /* text */
+  .artist-description {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    max-width: none;
+    margin: 35px 0 0;
+    font-family: "Space Mono", monospace;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  /* foto */
+  .artist-panel-photo {
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    width: 100%;
+    height: 276px;
+    margin-top: 30px;
+    overflow: hidden;
+  }
+
+  .artist-panel-photo.basalt img,
+  .artist-panel-photo.nova img {
+    position: static;
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    object-fit: cover;
+    object-position: center;
+    transform: none;
+  }
+
+  /* creu */
+  .artist-close {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    width: 65px;
+    height: 65px;
+    z-index: 10;
+  }
+
+  .artist-overlay {
+    z-index: 2000;
+  }
+}
+
+/* CONTACT — MÒBIL COMPLET */
+
+@media screen and (max-width: 600px) {
+  .contact-section {
+    position: relative;
+    width: 100%;
+    height: 881px;
+    margin-left: 0;
+    overflow: hidden;
+  }
+
+  /* títol */
+  .contact-marquee {
+    position: absolute;
+    top: 184px;
+    left: 0;
+    width: 100%;
+    height: 115px;
+    overflow: hidden;
+  }
+
+  .contact-marquee-track span {
+    font-size: 64px;
+    line-height: 1.2;
+    letter-spacing: 2.56px;
+  }
+
+  /* descripció */
+  .contact-description {
+    position: absolute;
+    top: 318px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 30px);
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  /*contacte */
+  .contact-links {
+    position: absolute;
+    top: 399px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 256px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+  }
+
+  .contact-pill {
+    font-size: 16px;
+  }
+
+  .contact-email {
+    width: 256px;
+    height: 35px;
+  }
+
+  .contact-instagram {
+    width: 164px;
+    height: 34px;
+  }
+
+  .contact-spotify {
+    width: 165px;
+    height: 32px;
+  }
+
+  .contact-pill svg {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  /* línia */
+  .contact-footer-line {
+    display: block;
+    position: absolute;
+    top: 588px;
+    left: 15px;
+    right: 15px;
+    width: auto;
+    height: 1px;
+    background: #000;
+  }
+
+  /* footer */
+  .contact-footer {
+    position: absolute;
+    top: 604px;
+    bottom: auto;
+    left: 0;
+    transform: none;
+    width: 100%;
+    max-width: none;
+    height: 180px;
+  }
+
+  /* logotip */
+  .contact-logo {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    margin: 0;
+    transform: none;
+    font-family: "Boldonse", sans-serif;
+    font-size: 24px;
+    line-height: 1.836;
+    letter-spacing: 0.96px;
+    white-space: nowrap;
+  }
+
+  /* back to top */
+  .contact-back {
+    position: absolute;
+    top: 73px;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+
+    width: 166px;
+    height: 35px;
+    padding: 0 18px;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0;
+
+    background: #eaf644;
+    border-radius: 46px;
+    color: #000;
+
+    font-family: "Space Mono", monospace;
+    font-size: 16px;
+    white-space: nowrap;
+  }
+
+  .contact-back svg {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+  }
+
+  .contact-back:hover {
+    background: #fff;
+    color: #000;
+  }
+
+  /* copyright */
+  .contact-copyright {
+    position: absolute;
+    top: 137px;
+    left: auto;
+    right: 15px;
+    width: 220px;
+    margin: 0;
+
+    display: block;
+    font-family: "Space Mono", monospace;
+    font-size: 13px;
+    line-height: 1.5;
+    text-align: right;
+    white-space: normal;
+  }
+
+  .copyright-symbol {
+    font-size: 13px;
+    margin-right: 3px;
+  }
+}
+
+/* SESSIONS — INFORMACIÓ NOMÉS EN MÒBIL */
+
+@media screen and (min-width: 601px) {
+  .sessions-bottom .session-info {
+    display: none;
+  }
+}
