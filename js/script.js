@@ -106,6 +106,13 @@ if (carousel && vinyls.length > 0) {
       // Als extrems, permetre continuar baixant o pujant
       if (alLimit) {
         scrollAcumulat = 0;
+
+        const ara = Date.now();
+
+        if (ara - ultimCanvi < 1000) {
+          event.preventDefault();
+        }
+
         return;
       }
 
